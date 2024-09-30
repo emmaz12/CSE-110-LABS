@@ -1,1 +1,1 @@
-# CSE-110-LAB-1
+# CSE-110-LABS
