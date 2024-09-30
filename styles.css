@@ -1,0 +1,66 @@
+#section1 {
+    background-color: #F5F0E6;   
+    scroll-margin-top: 158px;
+    font-size: 28px;
+}
+
+#section3{
+    background-color: #F5F0E6;   
+    scroll-margin-top: 158px;
+    font-size: 28px;
+}
+
+div{
+    display: inline-block;
+    width: 100%;
+}
+
+ul {
+    display: inline;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+ul:hover{
+    background-color: #182b49;
+}
+
+a:hover{
+    color: white;
+}
+
+a{
+    font-size: 28px;
+}
+#section2 {
+    background-image: url("section1BackgroundImage.png");
+    color: white;
+    scroll-margin-top: 138px;
+    font-size: 28px;
+}
+
+#navbar {
+    position: sticky;
+    top: 0;
+    background-color: white;
+}
+
+.ucsdLogo {
+    max-width: 400px;
+}
+
+.box{
+    background-color: #182b49;
+    color:white;
+    max-height: 500px;
+    overflow: scroll;
+
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+  }
