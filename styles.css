@@ -64,3 +64,31 @@ a{
     grid-template-columns: repeat(4, 1fr);
     gap: 25px;
   }
+
+img{
+    max-width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+    #navbar a {
+        display: none;
+    }
+
+    #navbar img {
+        max-width: 75%;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
