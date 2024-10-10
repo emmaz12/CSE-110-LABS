@@ -1,22 +1,10 @@
 import React, { useState } from 'react';
 import './App.css';
-import { themes } from './themeContext'; 
 
 interface AddToFavProps {
     favList: string[];
     setFavList: React.Dispatch<React.SetStateAction<string[]>>
     title: string; 
-}
-
-interface ToggleThemeProps {
-    currentTheme:{
-        foreground: string;
-        background: string;
-    }
-    setCurrentTheme: React.Dispatch<React.SetStateAction<{
-        foreground: string;
-        background: string;
-    }>>
 }
 
 function AddToFav(prop:AddToFavProps) {
@@ -39,19 +27,7 @@ function AddToFav(prop:AddToFavProps) {
     );
 }
 
-function ToggleTheme({ currentTheme, setCurrentTheme }: ToggleThemeProps) {
-    const toggleTheme = () => {
-        setCurrentTheme(currentTheme === themes.light ? themes.dark : themes.light);
-    };
-    return (
-      <button className="toggleTheme" onClick={toggleTheme}>
-        Toggle Theme
-      </button>
-    );
-  }
-
-export { AddToFav };
-export default ToggleTheme;
+export default AddToFav 
 
 
 
