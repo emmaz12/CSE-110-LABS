@@ -20,17 +20,13 @@ function App() {
  
  return (
   <ThemeContext.Provider value={currentTheme}>
-   <div className='app-container'
-   style={{
-    background: currentTheme.background,
-    color: currentTheme.foreground,
-    padding: "20px",
-  }}>
+   <div className='app-container'>
     <form className="note-form">
       <button onClick={(e) => {
         e.preventDefault();
         setCurrentTheme(currentTheme === themes.dark ? themes.light : themes.dark);
-      }}>
+      }}
+      className='toggleTheme'>
         Toggle theme
       </button>
        <div>
@@ -84,7 +80,12 @@ function App() {
        {notes.map((note) => (
          <div
            key={note.id}
-           className="note-item">
+           className="note-item"
+           style={{
+            background: currentTheme.background,
+            color: currentTheme.foreground,
+            padding: "20px",
+          }}>
            <div className="notes-header">
             <AddToFav title = {note.title} favList={favList} setFavList={setFavList}/>
              <button
