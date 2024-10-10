@@ -130,3 +130,8 @@
   color: white;
   cursor: pointer;
  }
+
+ input:focus, textarea:focus {
+  background-color:#e0f7fa;
+
+ }
