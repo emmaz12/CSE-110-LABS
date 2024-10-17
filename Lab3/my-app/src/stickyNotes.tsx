@@ -87,7 +87,7 @@ export const StickyNotes = () => {
             }}>
             <div className="notes-header">
             <AddToFav title = {note.title} favList={favList} setFavList={setFavList}/>
-                <button
+                <button data-testid = "delete"
                 onClick={(e) => {
                 e.preventDefault();
                 setNotes(notes.filter(item => item !== note))
